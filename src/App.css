@@ -1,0 +1,166 @@
+@font-face {
+  font-family: "Rounded";
+  src: url("./RoundedElegance-Regular.eot");
+  src: url("./RoundedElegance-Regular.eot?#iefix")format("embedded-opentype"),
+  url("./RoundedElegance-Regular.woff") format("woff"),
+  url("./RoundedElegance-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+
+
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.header_bg{
+  background: url('./fullpage-3.png') 50% 50%;
+  background-size: cover;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+}
+
+.header_block{
+  /*font-family: "round";*/
+  /*font-family: sans-serif;*/
+  width: 100vw;
+  height: 100vh;
+  background: #323232;
+  /*background: #665f62;*/
+  /*color: #FF3232;*/
+  color: #f03829;
+  display: flex;
+  /*justify-content: center;*/
+}
+
+.main_text{
+  color: #d9d8da;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  font-size: 83px;
+  /* text-transform: uppercase; */
+  left: 400px;
+  top: 100px;
+  font-family: "Rounded";
+  -ms-flex-align: end;
+  align-items: flex-end;
+  position: absolute;
+}
+
+.menu{
+  position: fixed;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+
+}
+.menu_wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 500px;
+}
+
+.menu_item{
+  width: 40px;
+  height: 80px;
+  background: #d9d8da;
+  transition: .2s linear;
+  box-shadow: 3px 4px 8px -3px #665f62;
+}
+
+.menu_item.active{
+  background: #f03829;
+  width: 70px;
+}
+
+
+.menu_item:hover{
+  width: 70px;
+  background: #f03829;
+  transition: .2s linear;
+  cursor: pointer;
+}
+
+.circle{
+  border-radius: 100px;
+  border: 2px solid #f03829;
+}
+
+.line{
+  /*height: 300px;*/
+  width: auto;
+  height: auto;
+  background: transparent;
+  position: absolute;
+  left: 400px;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  /*bottom: 550px;*/
+  font-family: "Rounded";
+  color: #f03829;
+}
+
+.line2{
+  left: 450px;
+}
+
+.red_line{
+  width: 1px;
+  background: #f03829;
+  height: 100%;
+}
+
+span.red_text{
+  color: #f03829;
+  margin-right: 10px;
+  font-family: "Rounded";
+}
+
+.main_text span{
+  font-family: "Rounded";
+}
+
+.text_line{
+  margin-top: -8px;
+}
+
+.an, .first{
+ opacity: 0;
+  transition: .2s linear;
+}
+
+
