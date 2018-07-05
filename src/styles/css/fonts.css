@@ -1,0 +1,11 @@
+@font-face {
+    font-family: "Rounded";
+    src: url("../fonts/RoundedElegance-Regular.eot");
+    src: url("../fonts/RoundedElegance-Regular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/RoundedElegance-Regular.woff") format("woff"),
+    url("../fonts/RoundedElegance-Regular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
