@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import './styles/css/generalFile.css';
 // import {Animated} from "react-animated-css";
-import {MenuItems} from './DataController/DataController';
+import {MenuItems, GalleryItems} from './DataController/DataController';
 import LeftMenuComponent from './Components/LeftMenuComponent';
 import HeaderBlock from './Components/HeaderBlock';
-import PortfolioBlock from './Components/PortfolioBlock';
+import GalleryBlock from './Components/GalleryBlock';
 
 
 
@@ -18,7 +18,7 @@ class App extends Component {
 
         <LeftMenuComponent menuData={MenuItems} />
         <HeaderBlock />
-        <PortfolioBlock />
+        <GalleryBlock galleryItems={GalleryItems}/>
 
       </div>
     );

@@ -393,32 +393,145 @@ span.red_text{
 .grid-container {
     display: grid;
     grid-template-areas:
-            'item1 item2 item2 item3 item3'
-            'item4 item2 item2 item3 item3'
-            'item4 item5 item5 item3 item3'
-            'item6 item7 item7 item7 item7'
-            'item8 item8 item8 item9 item9'
-            'item8 item8 item8 item11 item11'
-            'item10 item10 item10 item11 item11'
-            'item12 item12 item13 item13 item13'
+            'item1 item1 item2 item2 item3 item3'
+            'item4 item4 item2 item2 item3 item3'
+            'item4 item4 item5 item5 item3 item3'
+            'item6 item6 item7 item7 item7 item7'
+            'item8 item8 item8 item8 item9 item9'
+            'item8 item8 item8 item8 item11 item11'
+            'item10 item10 item10 item10 item11 item11'
+            'item12 item12 item12 item13 item13 item13'
 ;
     grid-gap: 30px;
     background-color: #fff;
     padding: 10px;
     width: 80%;
     margin: 0 auto;
-    grid-auto-rows: minmax(180px, auto);
+    grid-auto-rows: minmax(200px, auto);
 }
-.grid-container > div {
+.grid-container .item_wrapper > div {
     background-color: rgba(155, 155, 155, 0.2);
     text-align: center;
     padding: 20px 0;
     font-size: 30px;
-    border: 1px solid red;
+    /*border: 1px solid red;*/
 }
 
 
+.gallery_item_shadow{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    top: 0px;
+    left: 0px;
+}
 
+.item .img_part{
+    background: url('../img/proj1img2.png') 50% 0% no-repeat;
+    background-size: cover;
+    position: relative;
+    flex: 1;
+}
+
+.item1 .img_part{
+    background-image: url('../img/fullpage-3.png');
+}
+
+.item2 .img_part{
+    background-image: url('../img/proj1img2.png');
+}
+
+.item3 .img_part{
+    background-image: url('../img/fullpage-1.png');
+}
+
+.item4 .img_part{
+    background-image: url('../img/fullpage-6.png');
+}
+
+.item6 .img_part{
+    background-image: url('../img/city-full-page-500.png');
+}
+
+.item7 .img_part{
+    background-image: url('../img/fullpage-5.png');
+}
+
+.item8 .img_part{
+    background-image: url('../img/fullpage-5-2.png');
+}
+
+.item9 .img_part{
+    background-image: url('../img/fullpage-485x485.png');
+}
+
+.item10 .img_part{
+    background-image: url('../img/full-page-500-3.png');
+}
+
+.item12 .img_part{
+    background-image: url('../img/fullpage.png');
+}
+
+.item13 .img_part{
+    background-image: url('../img/fullpage-9.png');
+}
+
+
+.item{
+    display: flex;
+    flex-direction: column;
+}
+
+.item:hover{
+    cursor: pointer;
+}
+.info_part{
+    height: 55px;
+    /*border: 1px solid #c5c5c5;*/
+    border-top: none;
+}
+
+.info_part{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px;
+    color: #696969;
+}
+
+.item_tags{
+    width: 45%;
+    color: #c5c5c5;
+    font-size: 13px;
+}
+
+.item_tags span{
+    transition: .2s linear;
+}
+
+.item_tags span:hover{
+    color: #f03829;
+    transition: .2s linear;
+    cursor: pointer;
+}
+
+.item_info_wrapper{
+    display: flex;
+    flex-direction: column;
+}
+.item_info_wrapper span{
+    font-size: 13px;
+}
+.item_info_wrapper span:first-child{
+    color: #f03829;
+    font-size: 17px;
+}
+
+.items_name{
+    text-align: left;
+}
 
 
 
