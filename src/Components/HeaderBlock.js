@@ -100,7 +100,8 @@ class HeaderBlock extends Component{
                 </div>
 
                 <div className={'main_logo'}>
-                    <img src={mainLogo} />
+                    <span>wecan</span>
+                    <span><span className={'red'}>do</span>web</span>
                 </div>
 
                 <div className={'headerBg'}></div>
